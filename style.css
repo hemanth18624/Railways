@@ -1,1 +1,83 @@
 
+* {
+    margin: 0;
+    font-family: Arial;
+}
+
+.navbar {
+    height: 150px;
+    width: auto;
+    background-color: black;
+    display: flex; /* Added */
+    align-items: center; /* Added */
+    justify-content: space-evenly;
+}
+
+.navhome {
+    font-size: 25px;
+    font-weight: 900;
+    color: White;
+    
+   
+    margin-left: 20px; /* Adjust as needed */
+}
+.navlogin{
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    
+    
+    margin-left: 20px;
+}
+.navsignup{
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    
+    
+    margin-left: 20px;
+}
+.navbooking
+{
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    
+    
+    margin-left: 20px;
+}
+.heroimg {
+    background-image: url("train_1.jpg");
+    background-size: contain; /* or contain, depending on your preference */
+    background-position: center; /* optional: adjust the position of the background image */
+    height:500px;
+    margin-top: 10px;
+    
+    z-index: 1;
+    /* set a height for the element to make the background visible */
+}
+
+.heroicon1 {
+    position: absolute;
+    top: 50%;
+    right: 5px; /* Adjust as needed */
+    transform: translateY(-50%);
+    color: black; /* Example color */
+    font-size: 40px; /* Example larger font size */
+    z-index: 2;
+}
+.heroicon2{
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Adjust as needed */
+    transform: translateY(-50%);
+    color: black; /* Example color */
+    font-size: 40px; /* Example larger font size */
+    z-index: 2;
+}
+.border:hover{
+    border: 2px solid violet;
+}
+
+
+
