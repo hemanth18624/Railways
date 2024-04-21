@@ -1,0 +1,124 @@
+*{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  border: border-box;
+}
+
+body{
+  background-image: url(railway1.png);
+  background-size: cover; 
+}
+
+.title{
+   display: flex;
+   justify-content:center;
+   align-items:center;
+   width:auto;
+   color:black;
+   font-weight:bolder;
+}
+
+.title h1{
+  font-family:  Helvetica;
+  color: darkblue;
+}
+hr{
+  margin-top: 15px;
+}
+.login-heading{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #555;
+  font-weight: bold;
+  
+}
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+
+   
+}
+.wrap{
+  display:flex;
+  justify-content: space-around;
+  margin-top:30px;
+}
+button {
+  border-radius: 14%;
+  background-color: lightblue;
+  color: black;
+  font-weight: 600;
+  border: 2px solid black;
+  height: 25px;
+  width: 70px;
+  cursor: pointer;
+  
+}
+
+.container{
+  height:700px;
+  width:26%;
+  margin:auto;
+  
+  margin-top:40px;
+  border-radius:15px;
+  background-color:#699bb3;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0px;
+  
+  border:1px solid black;
+}
+
+.bot{
+  width:80px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  font-weight:600;
+  border-radius:10%;
+  cursor:pointer;
+ border:1px solid black;
+}
+.submit{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-radius:10%;
+}
+.first{
+  display:flex;
+  justify-content:center;
+  align-items:top;
+  font-weight:600;
+  margin-right: 20px;
+}
+.gender{
+  margin:auto;
+  font-weight:600;
+}
+.btn{
+  margin:auto;
+  width:50%;
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  font-weight:600;
+  align-items:center;
+}
