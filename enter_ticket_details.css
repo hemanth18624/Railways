@@ -1,0 +1,61 @@
+*{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  border: border-box;
+}
+body{
+  background-image: url(railway1.png);
+  background-size: cover;
+}
+.heading{
+  display: flex;
+  height:40px;
+  width:50%;
+  margin-left:330px;
+  margin-top: 20px;
+  justify-content: center;
+}
+.container{
+  height:850px;
+  width:45%;
+  margin:auto;
+  margin-top:40px;
+  border-radius:15px;
+  background-color:#699bb3;
+  display:flex;
+  margin-top: 30px;
+  justify-content:center;
+  padding:0px;
+  
+  border:1px solid black;
+}
+form{
+  margin-top: 25px;
+}
+label{
+  font-weight: 700;
+  color:#555555;
+  font-size: 20px;
+}
+input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.bot{
+  width:80px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  font-weight:600;
+  border-radius:10%;
+  cursor:pointer;
+ border:1px solid black;
+ margin-top: 20px;
+}
+
+
