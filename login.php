@@ -1,6 +1,5 @@
 <?php
 session_start();
-//require 'register.php';
 
 if(isset($_POST["submit"]))
 {
@@ -15,15 +14,16 @@ if(isset($_POST["submit"]))
     if(mysqli_num_rows($result) > 0){
         if($password == $row["password"]){
             $_SESSION["Signin"] = true;
-            header("Location: index.html");
+            header("Location: search_train.php");
             exit();
         }
         else{
-            echo "Error: Invalid password";
+            
+            header("Location: display_wrong_credentials.php");
         }
     }
     else{
-        echo "Error: User not found";
+        header("Location: display_wrong_credentials.php");
     }
 }
 ?>
@@ -39,7 +39,7 @@ if(isset($_POST["submit"]))
 </head>
 <body>
     <header>
-        <div class="title">
+        .<div class="title">
             <h1>Indian Railways</h1> 
         </div>
         <hr>
@@ -48,16 +48,17 @@ if(isset($_POST["submit"]))
         </div>
     </header>
     <div class="container">
-        <form action="login.php" method="POST" class="form">
+        <form action="" method="POST" class="form">
             <label for="username">Username*</label>
             <input type="text" id="username" name="username" placeholder="Enter your username" required>
             <label for="password">Password*</label>
             <input type="password" id="password" name="password" placeholder="Enter your password" required>
             <div class="submit">
                 <input type="submit" name="submit" class="bot" value="Sign in">
-                <a id="botkebot" href="register.html">Register</a>
+                <a id="botkebot" href="register.php">Register</a>
             </div>
         </form>
+        <?php if(isset($error)) echo "<p>$error</p>"; ?>
     </div>
 </body>
 </html>
