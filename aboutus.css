@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url(railway1.png);
+    background-size:cover;
+}
+.heading{
+    display:flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+p{
+    width:40%;
+}
+.msg1{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 20px;
+    justify-content: center;
+}
+.msg2{
+    margin-top: 40px;
+    background-color: lightgoldenrodyellow;
+}
+.msg3{
+    margin-top: 40px;
+    background-color: lightsalmon;
+}
+.msg4{
+    margin-top: 40px;
+    background-color: lightgrey;
+}
+footer {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+}
+hr{
+    margin-top: 15px;
+}
