@@ -35,6 +35,7 @@ if (isset($_POST['submit'])) {
     $gen_count = $_POST['gen_count'];
     $sleeper_count = $_POST['sleeper_count'];
     $ac_count = $_POST['ac_count'];
+
     
     switch ($berth_type) {
         case "general":
@@ -101,7 +102,8 @@ if (isset($_POST['submit'])) {
             'distance' => $distance,
             'gen_count' => $gen_count,
             'sleeper_count' => $sleeper_count,
-            'ac_count' => $ac_count
+            'ac_count' => $ac_count,
+            'pnr_no' => $pnr
         ];
 
         // Redirect to generate_qr.php
