@@ -24,7 +24,7 @@
     </div>
     <script>
         setTimeout(function() {
-          window.location.href = "index.html";
+          window.location.href = "generate_qr.php";
         }, 5000); // 5000 milliseconds = 5 seconds
       </script>
 </body>
