@@ -105,7 +105,7 @@ if (isset($_POST['submit'])) {
         ];
 
         // Redirect to generate_qr.php
-        header("Location: generate_qr.php");
+        header("Location: payment_processing.php");
         exit();
     } else {
         echo "ERROR: $sql <br>" . $con->error;
