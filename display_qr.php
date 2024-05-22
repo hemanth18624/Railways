@@ -43,16 +43,6 @@ if (isset($_SESSION['ticket_details'])) {
     <div class="qr-code">
       <img src="<?php echo $image_path; ?>" alt="QR Code">
     </div>
-    <div class="ticket-details">
-      <h2>Ticket Details</h2>
-      <ul>
-        <?php
-          foreach ($ticket_details as $key => $value) {
-            echo "<li><b>$key:</b> $value</li>";
-          }
-        ?>
-      </ul>
-    </div>
   </div>
 </body>
 </html>
