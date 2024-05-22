@@ -23,16 +23,10 @@ $train_name = $ticket_details['train_name'];
 $source = $ticket_details['source'];
 $destination = $ticket_details['destination'];
 $date_of_journey = $ticket_details['date_of_journey'];
-$gen_price = $ticket_details['gen_price'];
-$sleeper_price = $ticket_details['sleeper_price'];
-$ac_price = $ticket_details['ac_price'];
-$distance = $ticket_details['distance'];
-$gen_count = $ticket_details['gen_count'];
-$sleeper_count = $ticket_details['sleeper_count'];
-$ac_count = $ticket_details['ac_count'];
+$pnr_no = $ticket_details['pnr_no'];
 
 // Combine the details into a single string
-$ticket_info = "Name: $name\nAge: $age\nGender: $gender\nBerth Type: $berthType\nPhone No: $phone_no\nEmail: $email\nNumber of Tickets: $no_of_tickets\nTrain ID: $train_id\nTrain Name: $train_name\nSource: $source\nDestination: $destination\nDate of Journey: $date_of_journey\nGeneral Price: $gen_price\nSleeper Price: $sleeper_price\nAC Price: $ac_price\nDistance: $distance\nGeneral Count: $gen_count\nSleeper Count: $sleeper_count\nAC Count: $ac_count";
+$ticket_info = "**PNR No: $pnr_no**\nName: $name\nAge: $age\nGender: $gender\nBerth Type: $berthType\nPhone No: $phone_no\nEmail: $email\nNumber of Tickets: $no_of_tickets\nTrain ID: $train_id\nTrain Name: $train_name\nSource: $source\nDestination: $destination\nDate of Journey: $date_of_journey";
 
 // Generate a unique identifier for the QR code file name
 $unique_input = uniqid('ticket_');
