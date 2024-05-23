@@ -43,6 +43,12 @@ if (isset($_SESSION['ticket_details'])) {
     <div class="qr-code">
       <img src="<?php echo $image_path; ?>" alt="QR Code">
     </div>
+    <button id="bot3">download
+  </button>
   </div>
+  <script>
+    const a=document.getElementById('bot3');
+    a.addEventListener('click',function(){print()});
+  </script>
 </body>
 </html>
