@@ -51,10 +51,14 @@ if (isset($_SESSION['ticket_details'])) {
     }
     #bot3{
       display:flex;
-      align-items:center;
+      justify-content:center;
     }
     .ticket-details{
       margin-left:120px;
+    }
+    .bot2{
+      display:flex;
+      justify-content:center;
     }
   </style>
 </head>
@@ -65,9 +69,10 @@ if (isset($_SESSION['ticket_details'])) {
     <div class="qr-code">
       <img src="<?php echo $image_path; ?>" alt="QR Code">
     </div>
-    <button id="bot3">download
-  </button>
-  <div class="ticket-details">
+    <div class="bot2">
+    <button id="bot3">download</button>
+    </div>
+    <div class="ticket-details">
       <h2>Ticket Details</h2>
       <p><strong>PNR No:</strong> <?php echo $pnr_no; ?></p>
       <p><strong>Name:</strong> <?php echo $name; ?></p>
@@ -83,7 +88,6 @@ if (isset($_SESSION['ticket_details'])) {
       <p><strong>Destination:</strong> <?php echo $destination; ?></p>
       <p><strong>Date of Journey:</strong> <?php echo $date_of_journey; ?></p>
     </div>
-
   </div>
   <script>
     const a=document.getElementById('bot3');
