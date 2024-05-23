@@ -49,11 +49,19 @@ if (isset($_SESSION['ticket_details'])) {
       display: inline-block;
       margin-top:20px;
     }
+    #bot3{
+      display:flex;
+      align-items:center;
+    }
+    .ticket-details{
+      margin-left:120px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Scan the QR Code to get Ticket Details</h1>
+    <h2>Please download the QRCode for entry</h2>
     <div class="qr-code">
       <img src="<?php echo $image_path; ?>" alt="QR Code">
     </div>
